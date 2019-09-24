@@ -35,6 +35,12 @@ namespace DemoScope
 
             services.AddTransient<IStudentRepository, StudentRepository>();
             services.AddDbContext<SchoolContext>(options => options.UseSqlServer(strCon));
+
+            services.AddCors(c =>
+            {
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin());
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,8 +55,11 @@ namespace DemoScope
                 app.UseHsts();
             }
 
+
+            app.UseCors(options => options.WithOrigins("https://localhost:44394"));
             app.UseHttpsRedirection();
             app.UseMvc();
+
         }
     }
 }

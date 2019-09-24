@@ -4,12 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using DemoScope.DAL;
 using DemoScope.Models;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 
+  
 namespace DemoScope.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("AllowOrigin")]
     [ApiController]
     public class StudentsController : ControllerBase
     {
@@ -21,6 +24,7 @@ namespace DemoScope.Controllers
         }
 
         // GET api/values
+        [EnableCors("AllowOrigin")]
         [HttpGet]
         public ActionResult<IEnumerable<StudentModel>> Get()
         {

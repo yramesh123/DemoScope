@@ -1,0 +1,24 @@
+<h1> Students Data </h1>
+
+<p>This component demonstrates fetching students data from the server.</p>
+
+<p *ngIf="!students"><em>Loading...</em></p>
+
+<table class='table' *ngIf="students">
+  <thead>
+    <tr>
+      <th>Roll</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>IDNum</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.rollNumber }}</td>
+      <td>{{ student.firstName }}</td>
+      <td>{{ student.lastName }}</td>
+      <td>{{ student.idNum }}</td>
+    </tr>
+  </tbody>
+</table>
