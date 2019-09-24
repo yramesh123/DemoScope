@@ -11,11 +11,11 @@ namespace DemoScope.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ValuesController : ControllerBase
+    public class StudentsController : ControllerBase
     {
         private IStudentRepository studentRepository;
 
-        public ValuesController(IStudentRepository _studentRepository)
+        public StudentsController(IStudentRepository _studentRepository)
         {
             studentRepository = _studentRepository;
         }

@@ -51,9 +51,6 @@ namespace DemoScope
 
             app.UseHttpsRedirection();
             app.UseMvc();
-
-
-
         }
     }
 }

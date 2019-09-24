@@ -11804,11 +11804,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Student\\DemoScope\\DemoScope\\DemoScope.csproj",
+      "projectUniqueName": "E:\\Student\\SchoolGPSTracker\\DemoScope\\DemoScope.csproj",
       "projectName": "DemoScope",
-      "projectPath": "E:\\Student\\DemoScope\\DemoScope\\DemoScope.csproj",
+      "projectPath": "E:\\Student\\SchoolGPSTracker\\DemoScope\\DemoScope.csproj",
       "packagesPath": "C:\\Users\\yramesh\\.nuget\\packages\\",
-      "outputPath": "E:\\Student\\DemoScope\\DemoScope\\obj\\",
+      "outputPath": "E:\\Student\\SchoolGPSTracker\\DemoScope\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
