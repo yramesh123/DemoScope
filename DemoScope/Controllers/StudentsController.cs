@@ -7,12 +7,13 @@ using DemoScope.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using DemoScope.Filters;
 
-  
 namespace DemoScope.Controllers
 {
     [Route("api/[controller]")]
     [EnableCors("AllowOrigin")]
+    [CustomLog]
     [ApiController]
     public class StudentsController : ControllerBase
     {

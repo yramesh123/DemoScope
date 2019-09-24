@@ -25,3 +25,4 @@ E:\Student\SchoolGPSTracker\DemoScope\obj\Debug\netcoreapp2.1\DemoScope.Assembly
 E:\Student\SchoolGPSTracker\DemoScope\obj\Debug\netcoreapp2.1\DemoScope.RazorTargetAssemblyInfo.cache
 E:\Student\SchoolGPSTracker\DemoScope\obj\Debug\netcoreapp2.1\DemoScope.dll
 E:\Student\SchoolGPSTracker\DemoScope\obj\Debug\netcoreapp2.1\DemoScope.pdb
+E:\Student\SchoolGPSTracker\DemoScope\obj\Debug\netcoreapp2.1\DemoScope.csprojAssemblyReference.cache
