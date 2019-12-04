@@ -9,5 +9,7 @@ namespace DemoScope.DAL
     public interface IStudentRepository
     {
         List<StudentModel> GetStudentsModels();
+
+        List<TeacherModel> GetTeacherModels();
     }
 }

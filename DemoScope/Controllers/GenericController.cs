@@ -15,11 +15,11 @@ namespace DemoScope.Controllers
     [EnableCors("AllowOrigin")]
     [CustomLog]
     [ApiController]
-    public class StudentsController : ControllerBase
+    public class GenericController : ControllerBase
     {
         private IStudentRepository studentRepository;
 
-        public StudentsController(IStudentRepository _studentRepository)
+        public GenericController(IStudentRepository _studentRepository)
         {
             studentRepository = _studentRepository;
         }
@@ -31,6 +31,22 @@ namespace DemoScope.Controllers
         {
             return studentRepository.GetStudentsModels();   
 
+        }
+
+        // GET api/values
+        [EnableCors("AllowOrigin")]
+        [Route("/Generic/GetTeachers")]
+        public ActionResult<IEnumerable<TeacherModel>> GetTeachers()
+        {
+            return studentRepository.GetTeacherModels();
+
+        }
+
+        [EnableCors("AllowOrigin")]
+        [Route("/Generic/GetTeacher/{id}")]
+        public ActionResult<TeacherModel> GetTeacher(int empId)
+        {
+            return studentRepository.GetTeacherModels()[0];
         }
 
         // GET api/values/5

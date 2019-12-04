@@ -11,7 +11,7 @@ namespace DemoScope.Filters
     {
         public CustomLogAttribute()
         {
-
+            
         }
 
         public override void OnActionExecuting(ActionExecutingContext context)
