@@ -35,10 +35,26 @@ namespace DemoScope.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<StudentModel> Get(int id)
         {
-            return "value";
+            return studentRepository.GetStudentsModels().FirstOrDefault(m => m.RollNumber == id);
         }
+
+        [Route("api/Teacher/GetTeachers")]
+        public ActionResult<IEnumerable<TeacherModel>> GetTeachers()
+        {
+            return studentRepository.GetTeachersModels();
+
+        }
+
+        // GET api/values/5        
+        [Route("api/Teacher/GetTeacher/{id}")]
+        public ActionResult<TeacherModel> GetTeacher(int id)
+        {
+            return studentRepository.GetTeachersModels().FirstOrDefault(m => m.EmpId == id);
+        }
+
+
 
         // POST api/values
         [HttpPost]
