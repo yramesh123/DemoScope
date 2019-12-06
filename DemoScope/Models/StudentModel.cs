@@ -15,9 +15,9 @@ namespace DemoScope.Models
        public  string LastName { get; set; }
 
         [Key]
-        public  Decimal RollNumber { get; set; }
+        public  Int32 RollNumber { get; set; }
 
-        public string IdNum { get; set; }
+        public Int32 IdNum { get; set; }
 
     }
 }

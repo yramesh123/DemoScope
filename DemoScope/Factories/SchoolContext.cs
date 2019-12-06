@@ -12,7 +12,7 @@ namespace DemoScope.Factories
         public DbSet<StudentModel> Students { get; set; }
 
         public DbSet<TeacherModel> Teachers { get; set; }
-      
+
         public SchoolContext(DbContextOptions<SchoolContext> dc) : base(dc)
         {
 

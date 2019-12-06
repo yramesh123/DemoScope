@@ -7,16 +7,18 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DemoScope.Models
 {
-    [Table("tbl_teachers") ]
+    [Table ("tbl_teachers")]
     public class TeacherModel
     {
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        [Column ("ClassSubject")]
+        public string Subject { get; set; }
+
         [Key]
-        public Decimal EmpId { get; set; }
-
-        public string EmpName { get; set; }
-
-        public string Phone { get; set; }
-
-
+        public Int32 EmpId { get; set; }
     }
 }

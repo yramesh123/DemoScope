@@ -27,11 +27,9 @@ namespace DemoScope.DAL
             return schoolContext.Students.ToList();            
         }
 
-        public List<TeacherModel> GetTeacherModels()
+        public List<TeacherModel> GetTeachersModels()
         {
-
             return schoolContext.Teachers.ToList();
         }
-            
     }
 }
