@@ -1,0 +1,24 @@
+<h1> Teachers Data </h1>
+
+<p>This component demonstrates fetching teachers data from the server.</p>
+
+<p *ngIf="!teachers"><em>Loading...</em></p>
+
+<table class='table' *ngIf="teachers">
+  <thead>
+    <tr>
+      <th>Roll</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Subject</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let teacher of teachers">
+      <td>{{ teacher.empId }}</td>
+      <td>{{ teacher.firstName }}</td>
+      <td>{{ teacher.lastName }}</td>
+      <td>{{ teacher.subject }}</td>
+    </tr>
+  </tbody>
+</table>
