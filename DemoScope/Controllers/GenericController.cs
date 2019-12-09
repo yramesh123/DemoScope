@@ -33,22 +33,7 @@ namespace DemoScope.Controllers
 
         }
 
-        // GET api/values
-        [EnableCors("AllowOrigin")]
-        [Route("/Generic/GetTeachers")]
-        public ActionResult<IEnumerable<TeacherModel>> GetTeachers()
-        {
-            return studentRepository.GetTeacherModels();
-
-        }
-
-        [EnableCors("AllowOrigin")]
-        [Route("/Generic/GetTeacher/{id}")]
-        public ActionResult<TeacherModel> GetTeacher(int empId)
-        {
-            return studentRepository.GetTeacherModels()[0];
-        }
-
+       
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<StudentModel> Get(int id)
@@ -56,22 +41,7 @@ namespace DemoScope.Controllers
             return studentRepository.GetStudentsModels().FirstOrDefault(m => m.RollNumber == id);
         }
 
-        [Route("api/Teacher/GetTeachers")]
-        public ActionResult<IEnumerable<TeacherModel>> GetTeachers()
-        {
-            return studentRepository.GetTeachersModels();
-
-        }
-
-        // GET api/values/5        
-        [Route("api/Teacher/GetTeacher/{id}")]
-        public ActionResult<TeacherModel> GetTeacher(int id)
-        {
-            return studentRepository.GetTeachersModels().FirstOrDefault(m => m.EmpId == id);
-        }
-
-
-
+    
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)

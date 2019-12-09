@@ -1,5 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { MatSelectModule } from '@angular/material/select';
+import { MatIconModule, MatFormFieldModule, MatInputModule, MatLabel } from '@angular/material'
 
 @Component({
   selector: 'app-teachers',
